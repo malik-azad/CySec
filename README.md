@@ -1,45 +1,48 @@
-# CySec
-CySec Documentation
+# 🛡️ CySec — Cybersecurity Journey
+
+A personal documentation repository covering my full cybersecurity learning journey — from fundamentals to hands-on practice.
 
 ---
 
-## 🌐 Network Fundamentals
+## 📍 Roadmap
 
-A computer network is a collection of interconnected devices that communicate and exchange data using standardized communication protocols.
-
-### Key Components of a Network
-- **Devices** — computers, routers, servers, phones
-- **Transmission Medium** — cables, fiber, wireless
-- **Protocols** — rules governing communication
-
-### Packet Switching
-Data in networks is transmitted using **packet switching**. A large piece of data is divided into smaller packets.
-
-Each packet contains:
-- Source IP address
-- Destination IP address
-- Payload (actual data)
-- Control information
-
-Packets travel through multiple network devices and are reassembled at the destination.
+| # | Topic | Status |
+|---|-------|--------|
+| 1 | [🌐 Networking Fundamentals](./Networking/README.md) | ✅ In Progress |
+| 2 | 🐧 Linux & Kali Commands | 🔜 Coming Soon |
+| 3 | 🔍 Reconnaissance & OSINT | 🔜 Coming Soon |
+| 4 | 🌐 Web Application Security | 🔜 Coming Soon |
+| 5 | 🔐 Cryptography | 🔜 Coming Soon |
+| 6 | 🛠️ Tools & Frameworks | 🔜 Coming Soon |
+| 7 | 🚩 CTF Writeups | 🔜 Coming Soon |
+| 8 | 🦠 Malware Analysis | 🔜 Coming Soon |
+| 9 | 🏴 Privilege Escalation | 🔜 Coming Soon |
 
 ---
 
-### Types of Networks
+## 📁 Repository Structure
 
-| Type | Full Name | Description |
-|------|-----------|-------------|
-| **LAN** | Local Area Network | Small network covering homes, offices or universities. |
-| **WAN** | Wide Area Network | Large network connecting multiple LANs across cities or countries. |
-| **MAN** | Metropolitan Area Network | Network covering a city. |
-| **PAN** | Personal Area Network | Small personal network around a user such as Bluetooth devices. |
+```
+CySec/
+├── Networking/
+│   └── README.md        # Network fundamentals, protocols, models
+├── Linux/
+│   └── README.md        # Kali commands, bash tips (coming soon)
+├── WebSec/
+│   └── README.md        # OWASP Top 10, web attacks (coming soon)
+├── Tools/
+│   └── README.md        # Nmap, Burp Suite, Wireshark etc. (coming soon)
+├── CTF/
+│   └── README.md        # CTF writeups (coming soon)
+└── README.md            # This file
+```
 
 ---
 
-### Internet vs Intranet vs Extranet
+## 🎯 Goal
 
-| Term | Description |
-|------|-------------|
-| **Internet** | Public global network accessible to everyone. |
-| **Intranet** | Private internal network within an organization. |
-| **Extranet** | Limited external access to an organization's internal resources for partners or clients. |
+To document everything I learn about cybersecurity in a structured, reusable format — useful for revision, interviews, and sharing knowledge with others.
+
+---
+
+> *"The quieter you become, the more you can hear."* — Kali Linux motto
