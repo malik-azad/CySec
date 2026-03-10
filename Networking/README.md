@@ -1,7 +1,7 @@
 # 🌐 Networking for Cybersecurity
 
 > This is not just a networking guide — this is the foundation of everything in offensive and defensive security.
-> If you skip this, pentesting becomes guessing. Every attack, every tool, every exploit — it all maps back to networking.
+> Every attack, every tool, every exploit — it all maps back to networking.
 
 ---
 
