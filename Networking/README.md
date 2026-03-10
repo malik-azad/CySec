@@ -1,6 +1,6 @@
 # 🌐 Networking for Cybersecurity
 
-> This is not just a networking guide — this is the foundation of everything in offensive and defensive security.
+> This is not just a networking guide — this is the foundation of everything in offensive and defensive security.<br>
 > Every attack, every tool, every exploit — it all maps back to networking.
 
 ---
