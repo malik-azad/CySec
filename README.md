@@ -1,6 +1,7 @@
 # 🛡️ CySec — Cybersecurity Journey
 
-A personal documentation repository covering my full cybersecurity learning journey — from fundamentals to hands-on practice.
+A personal documentation repository covering full cybersecurity learning journey
+From fundamentals to hands-on practice.
 
 ---
 
@@ -45,4 +46,4 @@ To document everything I learn about cybersecurity in a structured, reusable for
 
 ---
 
-> *"The quieter you become, the more you can hear."* — Kali Linux motto
+> *"The quieter you become, the more you can hear."*  :)
