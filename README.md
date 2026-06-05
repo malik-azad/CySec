@@ -10,7 +10,7 @@ From fundamentals to hands-on practice.
 | # | Topic | Status |
 |---|-------|--------|
 | 1 | [🌐 Networking Fundamentals](./Networking/README.md) | ✅ In Progress |
-| 2 | 🐧 Linux & Kali Commands | 🔜 Coming Soon |
+| 2 | [🐧 Linux & Kali Linux](./Linux/README.md) | ✅ In Progress |
 | 3 | 🔍 Reconnaissance & OSINT | 🔜 Coming Soon |
 | 4 | 🌐 Web Application Security | 🔜 Coming Soon |
 | 5 | 🔐 Cryptography | 🔜 Coming Soon |
@@ -28,7 +28,7 @@ CySec/
 ├── Networking/
 │   └── README.md        # Network fundamentals, protocols, models
 ├── Linux/
-│   └── README.md        # Kali commands, bash tips (coming soon)
+│   └── README.md        # Linux and Kali commands, bash tips
 ├── WebSec/
 │   └── README.md        # OWASP Top 10, web attacks (coming soon)
 ├── Tools/
