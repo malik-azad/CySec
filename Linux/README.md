@@ -1,6 +1,6 @@
 # 🐧 Linux & Kali Linux for Cybersecurity
 
-> Linux is not just an operating system — it is the foundation of cybersecurity.<br>
+> Linux is not just an operating system, t is the foundation of cybersecurity.<br>
 > Every penetration tester, red teamer, and security engineer lives in the terminal.<br>
 > Master Linux, master the attack surface.
 
@@ -40,7 +40,7 @@ Linux is a **free, open-source operating system kernel** created by Linus Torval
 - Android phones
 - Security tools (Kali Linux, Parrot OS)
 
-As a cybersecurity professional, you MUST be comfortable with Linux because:
+Cyber ybersecurity professionals MUST be comfortable with Linux because:
 - Most servers you'll target run Linux
 - Most pentesting tools run on Linux
 - The command line is faster and more powerful than any GUI
