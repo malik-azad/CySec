@@ -11,7 +11,7 @@ From fundamentals to hands-on practice.
 |---|-------|--------|
 | 1 | [🌐 Networking Fundamentals](./Networking/README.md) | ✅ In Progress |
 | 2 | [🐧 Linux & Kali Linux](./Linux/README.md) | ✅ In Progress |
-| 3 | 🔍 Reconnaissance & OSINT | 🔜 Coming Soon |
+| 3 | [🔍 Reconnaissance & OSINT](./Recon-OSINT/README.md) | ✅ Completed |
 | 4 | 🌐 Web Application Security | 🔜 Coming Soon |
 | 5 | 🔐 Cryptography | 🔜 Coming Soon |
 | 6 | 🛠️ Tools & Frameworks | 🔜 Coming Soon |
@@ -26,16 +26,18 @@ From fundamentals to hands-on practice.
 ```
 CySec/
 ├── Networking/
-│   └── README.md        # Network fundamentals, protocols, models
+│   └── README.md            # Network fundamentals, protocols, models
 ├── Linux/
-│   └── README.md        # Linux and Kali commands, bash tips
+│   └── README.md            # Linux and Kali commands, bash tips
+├── Recon-OSINT/
+│   └── README.md            # Reconnaissance methodology, OSINT workflow, tools and reporting
 ├── WebSec/
-│   └── README.md        # OWASP Top 10, web attacks (coming soon)
+│   └── README.md            # OWASP Top 10, web attacks (coming soon)
 ├── Tools/
-│   └── README.md        # Nmap, Burp Suite, Wireshark etc. (coming soon)
+│   └── README.md            # Nmap, Burp Suite, Wireshark etc. (coming soon)
 ├── CTF/
-│   └── README.md        # CTF writeups (coming soon)
-└── README.md            # This file
+│   └── README.md            # CTF writeups (coming soon)
+└── README.md                # This file
 ```
 
 ---
