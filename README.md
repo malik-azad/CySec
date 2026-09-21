@@ -1,4 +1,4 @@
-# 🛡️ CySec — Cybersecurity Journey
+# 🛡️ CySec : Cybersecurity Roadmap and Personal Dairy
 
 A personal documentation repository covering full cybersecurity learning journey
 From fundamentals to hands-on practice.
