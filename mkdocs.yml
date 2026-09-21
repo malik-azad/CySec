@@ -1,0 +1,283 @@
+site_name: CySec
+site_description: Professional Cybersecurity Knowledge Base — Offensive Security, Pentesting, Red Teaming
+site_author: Malik Azad
+site_url: https://malik-azad.github.io/CySec
+repo_url: https://github.com/malik-azad/CySec
+repo_name: malik-azad/CySec
+edit_uri: edit/main/docs/
+copyright: © 2026 Malik Azad. Licensed under CC BY-NC-SA 4.0.
+
+theme:
+  name: material
+  language: en
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Inter
+    code: JetBrains Mono
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+    - search.highlight
+    - search.share
+    - search.suggest
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - content.tooltips
+    - toc.follow
+    - toc.integrate
+  icon:
+    repo: fontawesome/brands/github
+    logo: material/shield-lock
+    admonition:
+      note: material/information-outline
+      tip: material/lightbulb-outline
+      warning: material/alert-outline
+      danger: material/skull-crossbones
+      example: material/flask-outline
+      abstract: material/book-outline
+
+plugins:
+  - search:
+      separator: '[\s\u200b\-_,:!=\[\]\(\)"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+      min_search_length: 3
+      prebuild_index: true
+  - tags
+  - minify:
+      minify_html: true
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: date
+      format: "dd MMM yyyy"
+  - git-authors:
+      show_contribution: true
+      show_line_count: true
+  - macros
+  - mermaid2:
+      version: "10.9.0"
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.details
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user_url_shorthand: true
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - admonition
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - tables
+  - def_list
+  - footnotes
+  - abbr
+  - meta
+
+nav:
+  - Home: index.md
+  - Fundamentals:
+      - Overview: fundamentals/index.md
+      - Terminology & Concepts: fundamentals/terminology.md
+      - Roles & Career Paths: fundamentals/roles-careers.md
+      - Security Models & Frameworks: fundamentals/security-models.md
+      - Compliance & Standards: fundamentals/compliance-frameworks.md
+      - Interview Preparation: fundamentals/interview-guide.md
+  - Networking:
+      - Overview: networking/index.md
+      - OSI & TCP/IP Models: networking/osi-tcpip.md
+      - IP Addressing & Subnetting: networking/ip-subnetting.md
+      - DNS, ARP & DHCP: networking/dns-arp-dhcp.md
+      - Network Scanning & Enumeration: networking/scanning-enumeration.md
+      - MITM Attacks: networking/mitm-attacks.md
+      - Firewalls & VPN: networking/firewalls-vpn.md
+      - Packet Analysis: networking/packet-analysis.md
+  - Linux:
+      - Overview: linux/index.md
+      - Filesystem & Permissions: linux/filesystem-permissions.md
+      - User & Group Management: linux/user-management.md
+      - Process & Network Management: linux/process-network.md
+      - SSH & Hardening: linux/ssh-hardening.md
+      - Bash Scripting for Pentesting: linux/bash-scripting.md
+      - Privilege Escalation: linux/privilege-escalation.md
+      - Log Analysis & Monitoring: linux/log-analysis.md
+      - Common Vulnerabilities: linux/common-vulns.md
+  - Recon & OSINT:
+      - Overview: recon-osint/index.md
+      - Methodology & Workflow: recon-osint/methodology.md
+      - Passive Reconnaissance: recon-osint/passive-recon.md
+      - Active Reconnaissance: recon-osint/active-recon.md
+      - Subdomain Enumeration: recon-osint/subdomain-enumeration.md
+      - OSINT Frameworks & Tools: recon-osint/osint-frameworks.md
+      - Infrastructure Mapping: recon-osint/infrastructure-mapping.md
+      - People & Social OSINT: recon-osint/people-osint.md
+      - Reporting & Documentation: recon-osint/reporting.md
+      - Automation & Scripting: recon-osint/automation.md
+  - Web Application Security:
+      - Overview: websec/index.md
+      - Testing Methodology: websec/methodology.md
+      - OWASP Top 10 Deep Dive: websec/owasp-top10.md
+      - Authentication & Authorization: websec/authentication-authz.md
+      - Injection Attacks: websec/injection-attacks.md
+      - Client-Side Attacks: websec/client-side-attacks.md
+      - SSRF & XXE: websec/ssrf-xxe.md
+      - API Security Testing: websec/api-testing.md
+      - WebSocket Testing: websec/websocket-testing.md
+      - CMS & Framework Specifics: websec/cms-frameworks.md
+      - Bypass Techniques: websec/bypass-techniques.md
+      - Reporting & Remediation: websec/reporting.md
+  - Tools Reference:
+      - Overview: tools/index.md
+      - Nmap: tools/nmap.md
+      - Burp Suite: tools/burp-suite.md
+      - Wireshark: tools/wireshark.md
+      - Metasploit Framework: tools/metasploit.md
+      - BloodHound & SharpHound: tools/bloodhound.md
+      - SQLMap: tools/sqlmap.md
+      - Ffuf & Feroxbuster: tools/ffuf-feroxbuster.md
+      - Nuclei: tools/nuclei.md
+      - CrackMapExec: tools/crackmapexec.md
+      - Impacket: tools/impacket.md
+      - Custom Scripts & One-Liners: tools/custom-scripts.md
+  - Privilege Escalation:
+      - Overview: privesc/index.md
+      - Linux Enumeration: privesc/linux-enumeration.md
+      - Linux Kernel Exploits: privesc/linux-kernel-exploits.md
+      - Linux Sudo & SUID: privesc/linux-sudo-suid.md
+      - Linux Capabilities: privesc/linux-capabilities.md
+      - Linux Cron & PATH: privesc/linux-cron-path.md
+      - Linux Container Escape: privesc/linux-containers.md
+      - Windows Enumeration: privesc/windows-enumeration.md
+      - Windows Token Impersonation: privesc/windows-token-impersonation.md
+      - Windows DLL Hijacking: privesc/windows-dll-hijacking.md
+      - Windows Services & Registry: privesc/windows-services-registry.md
+      - Windows Kerberos Attacks: privesc/windows-kerberos.md
+      - Windows UAC Bypass: privesc/windows-uac-bypass.md
+      - Checklists & Methodology: privesc/checklists.md
+  - Active Directory Security:
+      - Overview: active-directory/index.md
+      - AD Fundamentals: active-directory/fundamentals.md
+      - Kerberos Attacks: active-directory/kerberos-attacks.md
+      - Delegation Abuse: active-directory/delegation-abuse.md
+      - ACL Abuse: active-directory/acl-abuse.md
+      - AD CS Attacks: active-directory/adcs-attacks.md
+      - GPO Abuse: active-directory/gpo-abuse.md
+      - BloodHound Queries: active-directory/bloodhound-queries.md
+      - Trust Attacks: active-directory/trust-attacks.md
+      - Azure AD & Hybrid: active-directory/azure-ad-hybrid.md
+      - Persistence: active-directory/persistence.md
+  - Cryptography:
+      - Overview: cryptography/index.md
+      - TLS & Certificates: cryptography/tls-certificates.md
+      - JWT Attacks: cryptography/jwt-attacks.md
+      - Padding Oracle: cryptography/padding-oracle.md
+      - Weak Cryptography: cryptography/weak-crypto.md
+      - Crypto in Malware: cryptography/crypto-in-malware.md
+      - Practical Attacks: cryptography/practical-attacks.md
+  - Malware Analysis:
+      - Overview: malware/index.md
+      - Static Analysis: malware/static-analysis.md
+      - Dynamic Analysis: malware/dynamic-analysis.md
+      - Memory Forensics: malware/memory-forensics.md
+      - YARA Rules: malware/yara-rules.md
+      - Sandbox Evasion: malware/sandbox-evasion.md
+      - C2 Frameworks: malware/c2-frameworks.md
+      - Ransomware Analysis: malware/ransomware.md
+  - CTF Writeups:
+      - Overview: ctf/index.md
+      - Methodology: ctf/methodology.md
+      - Writeups: ctf/writeups/index.md
+  - Cloud Security:
+      - Overview: cloud/index.md
+      - AWS Security: cloud/aws.md
+      - Azure Security: cloud/azure.md
+      - GCP Security: cloud/gcp.md
+      - Containers & Kubernetes: cloud/containers-k8s.md
+      - Serverless Security: cloud/serverless.md
+  - Wireless Security:
+      - Overview: wireless/index.md
+      - WPA2 & WPA3: wireless/wpa2-wpa3.md
+      - Evil Twin Attacks: wireless/evil-twin.md
+      - PMKID Attack: wireless/pmkid.md
+      - Bluetooth Security: wireless/bluetooth.md
+      - SDR Basics: wireless/sdr-basics.md
+  - Mobile Security:
+      - Overview: mobile/index.md
+      - Android Security: mobile/android.md
+      - iOS Security: mobile/ios.md
+      - Frida & Objection: mobile/frida-objection.md
+      - Bypassing Controls: mobile/bypassing-controls.md
+  - Appendices:
+      - Overview: appendices/index.md
+      - Port Reference: appendices/port-reference.md
+      - Regex Cheatsheet: appendices/regex-cheatsheet.md
+      - File Signatures: appendices/file-signatures.md
+      - MITRE ATT&CK Mapping: appendices/mitre-attack.md
+      - Glossary: appendices/glossary.md
+      - Certifications Guide: appendices/certifications.md
+      - Resources & Learning Paths: appendices/resources.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/malik-azad
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/malikazad
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/malikazad
+  analytics:
+    provider: google
+    property: G-XXXXXXXXXX
+  consent:
+    title: Cookie Consent
+    description: >-
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+  generator: false
+  version:
+    provider: mike
+
+hooks:
+  - hooks.py
+
+watch:
+  - docs
+  - mkdocs.yml

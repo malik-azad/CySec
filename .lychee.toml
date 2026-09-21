@@ -1,0 +1,29 @@
+[global]
+verbose = true
+no-progress = false
+max-concurrency = 10
+timeout = 30
+retry = 2
+retry-delay = 1000
+user-agent = "CySec-LinkChecker/1.0"
+accept = "200,206,301,302,307,308"
+exclude-mailto = true
+exclude-source = false
+base-url = "https://malik-azad.github.io/CySec"
+
+[skip]
+# Skip localhost and internal anchors
+patterns = [
+  "http://localhost*",
+  "http://127.0.0.1*",
+  "https://localhost*",
+  "https://127.0.0.1*",
+  "#*",
+  "mailto:*",
+  "tel:*",
+]
+
+[headers]
+# GitHub API for raw files
+"raw.githubusercontent.com" = { Authorization = "Bearer ${GITHUB_TOKEN}" }
+"github.com" = { Authorization = "Bearer ${GITHUB_TOKEN}" }

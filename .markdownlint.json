@@ -1,0 +1,13 @@
+{
+  "default": true,
+  "MD003": { "style": "atx" },
+  "MD007": { "indent": 4 },
+  "MD013": { "line_length": 120, "tables": false, "code_blocks": false },
+  "MD024": { "siblings_only": true },
+  "MD025": { "level": 1 },
+  "MD033": { "allowed_elements": ["details", "summary", "div", "span", "br", "pre", "code", "kbd", "samp", "var", "sub", "sup", "mark", "ins", "del", "abbr", "dfn", "cite", "small", "bdi", "bdo", "ruby", "rt", "rp", "data", "time", "wbr"] },
+  "MD041": false,
+  "MD046": { "style": "fenced" },
+  "MD051": false,
+  "MD052": false
+}
